@@ -1,3 +1,20 @@
+//! Hash map implementations, optimized for iteration and preserves insertion order.
+//!
+//! See std.hash_map if you need fast lookup and/or fast insertion/removal
+//!
+//! This module provides the following hash map variants:
+//!
+//! * `AutoArrayHashMap`: Hash map optimized for iteration.
+//! * `AutoArrayHashMapUnmanaged`: Hash map that does not own it's allocator, for more memory
+//!   efficient collections of hash maps.
+//! * `StringArrayHashMap`: Hash map specifically for string keys ([]const u8).
+//! * `StringArrayHashMapUnmanaged`: Hash map specifically for string keys ([] const u8), does not own
+//!   it's own allocator.
+//! * `ArrayHashMap`: Hash map that requires hashing and equality functions. See std.hash for
+//!   standard library hashing functions.
+//! * `ArrayHashMapUnmanaged`: Hash map that requires hashing and equality functions, and does not own
+//!   it's own allocator.
+
 const std = @import("std.zig");
 const debug = std.debug;
 const assert = debug.assert;
