@@ -9,11 +9,11 @@
 //!   efficient collections of hash maps.
 //! * `StringArrayHashMap`: Hash map specifically for string keys ([]const u8).
 //! * `StringArrayHashMapUnmanaged`: Hash map specifically for string keys ([] const u8), does not own
-//!   it's own allocator.
+//!   it's allocator.
 //! * `ArrayHashMap`: Hash map that requires hashing and equality functions. See std.hash for
 //!   standard library hashing functions.
 //! * `ArrayHashMapUnmanaged`: Hash map that requires hashing and equality functions, and does not own
-//!   it's own allocator.
+//!   it's allocator.
 
 const std = @import("std.zig");
 const debug = std.debug;

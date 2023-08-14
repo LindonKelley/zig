@@ -1,3 +1,16 @@
+//! Array list implementations, contiguous and growable.
+//!
+//! Contiguous means that each element immediately adjacent to the previous element.
+//! Growable means that user's may add elements during runtime, the list will handle the
+//! necessary resizing when required.
+//!
+//! This module provides the following array list implementations:
+//!
+//! * `ArrayList`: A contiguous, growable list of items in memory.
+//! * `ArrayListAligned`: A contiguous, growable list of arbitrarily aligned items in memory.
+//! * `ArrayListUnmanaged`: ArrayList that does not own it's allocator.
+//! * `ArrayListAlignedUnmanaged`: ArrayListAligned that does not own it's allocator.
+
 const std = @import("std.zig");
 const debug = std.debug;
 const assert = debug.assert;
