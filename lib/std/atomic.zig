@@ -1,3 +1,14 @@
+//! Memory ordering, atomic data structures and operations.
+//!
+//! This module provides the following:
+//!
+//! * The abilty to restrict allowed compiler memory re-ordering: `compilerFence`.
+//! * The above restriction as well as restricting the runtime hardware from re-ordering: `fence`.
+//! * Hinting to the processor about a busy-wait spin-loop: `spinLoopHint`.
+//! * The atomic primitive and it's functions: `Atomic.Atomic`.
+//! * Multi-producer multi-consumer (MPMC): `queue.Queue`.
+//! * Multiple reader multiple writer stack: `stack.Stack`.
+
 const std = @import("std.zig");
 const builtin = @import("builtin");
 
