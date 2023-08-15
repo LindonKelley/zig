@@ -1,6 +1,6 @@
 //! Hash map implementations, optimized for lookup times and fast insertion/removal.
 //!
-//! See std.array_hash_map if you need faster iteration and/or preservation of insertion order.
+//! See `std.array_hash_map` if you need faster iteration and/or preservation of insertion order.
 //!
 //! This module provides the following hash map variants:
 //!

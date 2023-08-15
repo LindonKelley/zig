@@ -6,7 +6,7 @@
 //! functions use `u8` as the type instead of `u7` for convenience and compatibility.
 //! Characters outside of the 7-bit range are gracefully handled (e.g. by returning `false`).
 //!
-//! See also: https://en.wikipedia.org/wiki/ASCII#Character_set
+//! See also: <https://en.wikipedia.org/wiki/ASCII#Character_set>
 
 const std = @import("std");
 

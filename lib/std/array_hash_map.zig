@@ -1,6 +1,6 @@
 //! Hash map implementations, optimized for iteration and preserves insertion order.
 //!
-//! See std.hash_map if you need fast lookup and/or fast insertion/removal
+//! See `std.hash_map` if you need fast lookup and/or fast insertion/removal
 //!
 //! This module provides the following hash map variants:
 //!
@@ -10,7 +10,7 @@
 //! * `StringArrayHashMap`: Hash map specifically for string keys ([]const u8).
 //! * `StringArrayHashMapUnmanaged`: Hash map specifically for string keys ([] const u8), does not own
 //!   it's allocator.
-//! * `ArrayHashMap`: Hash map that requires hashing and equality functions. See std.hash for
+//! * `ArrayHashMap`: Hash map that requires hashing and equality functions. See `std.hash` for
 //!   standard library hashing functions.
 //! * `ArrayHashMapUnmanaged`: Hash map that requires hashing and equality functions, and does not own
 //!   it's allocator.
