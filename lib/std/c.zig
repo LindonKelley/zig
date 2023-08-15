@@ -1,3 +1,5 @@
+//! External symbol declarations for libc.
+
 const std = @import("std");
 const builtin = @import("builtin");
 const c = @This();

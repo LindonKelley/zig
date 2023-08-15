@@ -1,3 +1,7 @@
+//! Configurations used for building Zig code.
+//!
+//! See the [standard language docs](https://ziglang.org/documentation/master/#Zig-Build-System) for details.
+
 const std = @import("std.zig");
 const builtin = @import("builtin");
 const io = std.io;

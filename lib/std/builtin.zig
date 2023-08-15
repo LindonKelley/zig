@@ -1,3 +1,5 @@
+//! Comptime-available information about the target machine and build mode.
+
 const builtin = @import("builtin");
 
 /// `explicit_subsystem` is missing when the subsystem is automatically detected,

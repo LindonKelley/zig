@@ -3,7 +3,7 @@
 //! This module provides encoding and decoding through `Base64Encoder` and
 //! `Base64Decoder`, and additionally provides `Base64DecoderWithIgnore` for ignoring
 //! user-specified characters during the decoding process. `standard` and `url_safe` codecs
-//! are also provided, as well as `*_no_pad` versions.
+//! are also provided, as well as paddless versions, `standard_no_pad` and `url_safe_no_pad`.
 
 const std = @import("std.zig");
 const assert = std.debug.assert;
